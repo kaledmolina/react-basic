@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bg-wave {
+    background: linear-gradient(135deg, #0070c0, #0058a0);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .bg-wave::before {
+    content: '';
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, #0070c0 20%, transparent 20%) 0 0, radial-gradient(circle, #0058a0 20%, transparent 20%) 50px 50px;
+    background-size: 100px 100px;
+    opacity: 0.1;
+  }
+  
